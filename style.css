@@ -1,0 +1,251 @@
+.headerSection{
+    width: 100%;
+    height: 900px;
+    background-image: url(https://i.ibb.co/rwj47nW/ia-200000019.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.headerSection::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+.logo{
+    width: 197px;
+    line-height: 57px;
+}
+.logo img{
+    max-width: 100%;
+
+}
+.nav-menu ul{
+    line-height: 37px;
+}
+.nav-menu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.nav-menu ul li::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    color: #c69453;
+}
+.nav-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 7px 23px;
+}
+.nav-menu ul li a:hover{
+    color: chocolate;
+}
+.nav-menu ul li:first-child a{
+    color: chocolate;
+}
+/* dropdown  start */
+li .dropdown{
+    position: absolute;
+    width: 227PX;
+    top: 100%;
+    left: 0;
+    background-color:whitesmoke;
+    visibility: hidden;
+    opacity: 0;
+    transition: .7s;
+    transform: scaleY(0);
+}
+li .dropdown li a {
+    color: black;
+    display: inline-block;
+    padding: 11px 13px;
+}
+.nav-menu ul li:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.bannerContant h1 {
+    position: relative;
+}
+.bannerContant h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 57px;
+    left: 157px;
+    width: 137px;
+    height: 3px;
+    background-color: rgb(255 255 255);
+}
+.bannerContant h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 57px;
+    right: 157px;
+    width: 137px;
+    height: 3px;
+    background-color: rgb(255 255 255);
+}
+
+/* banner       section         start */
+
+.bannerContant{
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+}
+.bannerContant h1{
+    font-size: 77px;
+}
+.bannerContant h3 {
+    margin: 37px 0;
+}
+.bannerContant a{
+    text-decoration: none;
+    color: white;
+    background-color: #c69453;
+    padding: 13px 27px;
+    display: inline-block;
+    border-radius: 30px;
+    transition: .5s;
+}
+.bannerContant a:hover{
+    background-color: white;
+    color: #c69453;
+}
+
+/* service       section           start */
+
+.serviceSection{
+    padding: 107px 0;
+    text-align: center;
+}
+.serviceSection h3 {
+    font-size: 17px;
+    line-height: 37px;
+}
+.s-btn{
+    text-decoration: none;
+    background-color: #c69453;
+    border-radius: 7px;
+    color: white;
+    padding: 7px 27px;
+    line-height: 51px;
+    transition: .7s;
+}
+.s-btn:hover{
+    background-color: black;
+    color: white;
+}
+.singleService{
+    padding: 17px;
+    transition: .7s;
+}
+.singleService:hover{
+    background-color:#e7e5e3;
+}
+.singleService:hover .s-btn{
+    background-color: white;
+    color: #c69453;
+}
+.singleService img{
+    transform: rotateY(0deg);
+    transition: .7s;
+}
+.singleService:hover img{
+    transform: rotateY(360deg);
+}
+
+
+/* about      section       start */
+.aboutSection{
+    padding: 117px 0;
+}
+.aboutSection span{
+    color: #c69453;
+}
+.aboutSection h1 {
+    font-size: 37px;
+    line-height: 67px;
+}
+.m-btn {
+    background-color: black;
+    color: white;
+    padding: 13px 27px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 27px;
+    transition: .7s;
+}
+
+/* contact           section             start */
+
+.contactSection{
+    padding: 117px 0;
+}
+.contactSection h2 {
+    font-size: 32px;
+    line-height: 71px;
+}
+.d-input {
+    width: 100%;
+    padding: 13px 23px;
+    margin: 13px 0;
+    outline: none;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px rgb(202, 202, 188);
+}
+.in-b{
+    border: none;
+    background-color: #c69453;
+    border: 1px solid #c69453;
+}
+.in-b:hover{
+    background-color: white;
+    color: #c69453;
+    border: 1px solid #c69453;
+
+}
+.background{
+    background-image: url("https://i.ibb.co/hCgnPkb/ia-200000022.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* footer        section      start */
+
+.footerSection{
+    background-color: #6d6d6d;
+    color: white;
+    padding: 27px 0;
+}
+.footer p{
+    margin-bottom: 0px;
+    padding: 13px 17px;
+}
+.footer ul{
+    margin-bottom: 0px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer ul li {
+    display: inline-block;
+    padding: 13px 17px;
+}
